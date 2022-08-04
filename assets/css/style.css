@@ -12,7 +12,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: rgba(211, 211, 211, 0.192);
+    background-color: rgba(0, 0, 255, 0.448);
 }
 
 .center-container {
@@ -20,7 +20,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 15rem;
+    min-height: 15rem;
     min-width: 15rem;
     padding: 20px;
     background-color: white;
@@ -62,4 +62,27 @@ body {
     margin-left: 20px;
     margin-right: 20px;
     line-height: 50px;
+}
+
+@media (max-width:500px) {
+    .center-container { 
+        height: 10rem;
+        min-width: 10rem;
+        padding: 10px;
+        background-color: white;
+        border: 1px solid rgba(119, 136, 153, 0.323);
+    }
+
+    #title {
+        font-size: 15pt;
+    }
+
+    #subtitle {
+        font-size: 7pt;
+    }
+
+    .counter {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
 }
