@@ -25,6 +25,8 @@ body {
     padding: 20px;
     background-color: white;
     border: 1px solid rgba(119, 136, 153, 0.323);
+    border-radius: 20px;
+    box-shadow: 6px 6px 10px 0 rgba(0, 0, 0, 0.276);
 }
 
 #title {
@@ -48,6 +50,7 @@ body {
     height: 50px;
     border-radius: 50%;
     background-color: rgba(0, 0, 255, 0.555);
+    cursor: pointer;
 }
 
 .counter .btn:hover {
@@ -58,13 +61,18 @@ body {
     font-size: 20pt;
 }
 
-#change {
+#currentNumber {
     margin-left: 20px;
     margin-right: 20px;
     line-height: 50px;
 }
 
 @media (max-width:500px) {
+    body {
+        display: block;
+        margin: 50px;
+    }
+
     .center-container { 
         height: 10rem;
         min-width: 10rem;
@@ -74,15 +82,16 @@ body {
     }
 
     #title {
-        font-size: 15pt;
-    }
-
-    #subtitle {
-        font-size: 7pt;
+        font-size: 18pt;
     }
 
     .counter {
         flex-direction: column-reverse;
         align-items: center;
+    }
+
+    #currentNumber {
+        margin: -7px 0;
+        line-height: 50px;
     }
 }
