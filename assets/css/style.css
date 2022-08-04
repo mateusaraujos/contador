@@ -1,6 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400&display=swap');
+
 * {
     padding: 0;
     margin: 0;
+    font-family: 'Inter', sans-serif;
+    user-select: none;
 }
 
 body {
@@ -15,21 +19,43 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
     height: 15rem;
-    width: 15rem;
+    min-width: 15rem;
+    padding: 20px;
     background-color: white;
     border: 1px solid rgba(119, 136, 153, 0.323);
+}
+
+#title {
+    font-size: 20pt;
+}
+
+#subtitle {
+    font-weight: 300;
+    font-size: 9pt;
+    text-align: center;
 }
 
 .counter {
     display: flex;
     justify-content: center;
+    margin-top: 20px;
 }
 
 .counter .btn {
     width: 50px;
     height: 50px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 255, 0.555);
+}
+
+.counter .btn:hover {
+    background-color: rgba(0, 0, 255, 0.448);
+}
+
+.btn .value {
+    font-size: 20pt;
 }
 
 #change {
