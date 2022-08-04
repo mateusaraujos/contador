@@ -42,6 +42,8 @@ body {
 .counter {
     display: flex;
     justify-content: center;
+    flex-direction: column-reverse;
+    align-items: center;
     margin-top: 20px;
 }
 
@@ -84,11 +86,6 @@ body {
 
     #title {
         font-size: 18pt;
-    }
-
-    .counter {
-        flex-direction: column-reverse;
-        align-items: center;
     }
 
     #currentNumber {
