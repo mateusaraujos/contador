@@ -8,7 +8,7 @@ let subtractBtn = document.getElementById("subtract");
 
 // Incrementando um número.
 addBtn.addEventListener("click", () => {
-    currentNumber += 1;
+    currentNumber++;
     numberSpan.innerHTML = currentNumber;
 })
 
