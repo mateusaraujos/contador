@@ -11,3 +11,11 @@ addBtn.addEventListener("click", () => {
     currentNumber += 1;
     numberSpan.innerHTML = currentNumber;
 })
+
+// Decrementando um número.
+subtractBtn.addEventListener("click", () => {
+    if (currentNumber > 0) {
+        currentNumber--;
+        numberSpan.innerHTML = currentNumber;
+    }
+})
