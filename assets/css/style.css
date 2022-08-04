@@ -47,15 +47,18 @@ body {
     margin-top: 20px;
 }
 
-.counter .btn {
+.counter .btn, #reset {
     width: 50px;
     height: 50px;
     border-radius: 50%;
     background-color: rgba(0, 0, 255, 0.555);
+    color: white;
+    border-color: white;
+    border-style: double;
     cursor: pointer;
 }
 
-.counter .btn:hover {
+.counter .btn:hover, #reset:hover {
     background-color: rgba(0, 0, 255, 0.448);
 }
 
@@ -67,6 +70,12 @@ body {
     margin-left: 20px;
     margin-right: 20px;
     line-height: 50px;
+}
+
+#reset {
+    position: absolute;
+    right: 10vw;
+    bottom: 10vh;
 }
 
 @media (max-width:500px) {
