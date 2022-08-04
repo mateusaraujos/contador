@@ -10,6 +10,7 @@ let subtractBtn = document.getElementById("subtract");
 addBtn.addEventListener("click", () => {
     currentNumber++;
     numberSpan.innerHTML = currentNumber;
+    numberSpan.style.color = "#00a000";
 })
 
 // Decrementando um número.
@@ -17,6 +18,11 @@ subtractBtn.addEventListener("click", () => {
     if (currentNumber > 0) {
         currentNumber--;
         numberSpan.innerHTML = currentNumber;
+        if (currentNumber !== 0) {
+            numberSpan.style.color = "#ff4040";
+        } else {
+            numberSpan.style.color = "black";
+        }
     }
 })
 
@@ -29,6 +35,7 @@ function createResetButton() {
     btn.addEventListener("click", () => {
         currentNumber = 0;
         numberSpan.innerHTML = currentNumber;
+        numberSpan.style.color = "black";
     })
     document.body.appendChild(btn); 
 }
