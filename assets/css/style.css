@@ -71,6 +71,7 @@ body {
     body {
         display: block;
         margin: 50px;
+        min-height: 0;
     }
 
     .center-container { 
