@@ -1,0 +1,39 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgba(211, 211, 211, 0.192);
+}
+
+.center-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 15rem;
+    width: 15rem;
+    background-color: white;
+    border: 1px solid rgba(119, 136, 153, 0.323);
+}
+
+.counter {
+    display: flex;
+    justify-content: center;
+}
+
+.counter .btn {
+    width: 50px;
+    height: 50px;
+}
+
+#change {
+    margin-left: 20px;
+    margin-right: 20px;
+    line-height: 50px;
+}
